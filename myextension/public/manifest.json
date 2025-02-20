@@ -3,7 +3,12 @@
   "name": "MoodWeb",
   "description": "Mood tracking extension",
   "version": "1.0",
-  "permissions": ["identity", "activeTab"],
+  "permissions": [
+    "activeTab",
+    "storage",
+    "https://moodweb-extension-backend.vercel.app/*"
+  ],
+  "host_permissions": ["http://localhost:3000/*"],
   "background": {
     "service_worker": "background.js"
   },

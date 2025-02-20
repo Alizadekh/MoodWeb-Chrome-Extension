@@ -3,7 +3,7 @@
   "name": "MoodWeb",
   "description": "Mood tracking extension",
   "version": "1.0",
-  "permissions": ["identity", "activeTab"],
+  "permissions": ["identity", "activeTab", "storage"],
   "background": {
     "service_worker": "background.js"
   },

@@ -39,8 +39,12 @@ export default defineConfig({
     },
   },
   server: {
+    proxy: {
+      "/analyze-mood":
+        "https://moodweb-extension-backend.vercel.app/api/analyze-mood",
+    },
     open: true,
-    port: 3000,
+    port: 3001,
     hmr: true,
   },
 });
